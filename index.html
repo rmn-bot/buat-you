@@ -12,10 +12,16 @@
 
 <body>
     
-        <audio autoplay loop>
-        <source src="adek.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung elemen audio.
-    </audio>
+<!-- Overlay layar hitam -->
+<div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background-color: black; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+  <button onclick="mulai()" style="font-size: 2rem;">♥️</button>
+</div>
+
+<!-- Audio background -->
+<audio id="musik" loop>
+  <source src="adek.mp3" type="audio/mpeg">
+</audio>
   <!-- Background -->
   <div class="night"></div>
 
