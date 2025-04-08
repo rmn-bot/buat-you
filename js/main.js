@@ -8,14 +8,6 @@ onload = () => {
     let index = 0;
 
     
-onload = () => {
-  const c = setTimeout(() => {
-    document.body.classList.remove("not-loaded");
-
-    const titles = ('I LOVE U meyyyyy 🫶🏻♥️🫰🏻').split('')
-    const titleElement = document.getElementById('title');
-    let index = 0;
-    
     function mulai() {
     // Play musik
     document.getElementById("musik").play();
@@ -29,21 +21,6 @@ onload = () => {
     }
   }
 
-
-    function appendTitle() {
-      if (index < titles.length) {
-        titleElement.innerHTML += titles[index];
-        index++;
-        setTimeout(appendTitle, 300); // 1000ms delay
-      }
-    }
-
-    appendTitle();
-
-    clearTimeout(c);
-  }, 1000);
-};
-    
 
     function appendTitle() {
       if (index < titles.length) {
