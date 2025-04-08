@@ -8,6 +8,19 @@ for (let index = 0; index < text.length; index++) {
   }
 }
 
+function mulai() {
+    // Play musik
+    document.getElementById("musik").play();
+
+    // Hilangkan layar hitam
+    document.getElementById("overlay").style.display = "none";
+
+    // Jalankan skrip lain (misalnya animasi, lirik, dll)
+    if (typeof jalankanLainnya === "function") {
+      jalankanLainnya();
+    }
+  }
+
 const textElements = document.querySelectorAll('.title span');
 textElements.forEach((element) => {
   const randomDelay = Math.random() * 3; // Menghasilkan delay acak antara 0 hingga 3 detik
